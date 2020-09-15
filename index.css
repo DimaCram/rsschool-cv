@@ -1,0 +1,52 @@
+html{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+img{
+    display: block;
+    height: 0 auto;
+    max-width: 100%;
+}
+P { 
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+.container{ 
+    width: 1025px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.user-photo{
+    margin-right: 50px;
+    border-radius: 20px;
+    width: 400px;
+    float: left;
+}
+@media(max-width: 700px){
+    .user-photo{
+        float: none;
+        margin: 0 auto;
+    }
+}
+a{
+    color: #269fc3;
+    transition: all linear 0.2s;
+}
+a:hover{
+    color: #00c5ff;
+}
+a:visited{
+    color: #269fc3;
+}
